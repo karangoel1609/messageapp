@@ -8,9 +8,9 @@ import { HttpClient } from '@angular/common/http';
 export class MessageServiceService {
 
 
-  private _sendMessageUrl ="http://localhost:3000/api/sendmessage";
-  private _displayMessageUrl ="http://localhost:3000/api/displaymessages";
-  private _deleteMessageUrl = "http://localhost:3000/api/deleatemessages";
+  private _sendMessageUrl ="/api/sendmessage";
+  private _displayMessageUrl ="/api/displaymessages";
+  private _deleteMessageUrl = "/api/deleatemessages";
 
   constructor(private http:HttpClient) { }
 
