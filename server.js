@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use('/api',api)
 
 app.get('*',(req , res )=>{
-    res.sendFile('index.html',{root:'dist/angular-app-heroku/'});
+    res.sendFile('index.html',{root:'dist/rahul-app/'});
 })
 
 
