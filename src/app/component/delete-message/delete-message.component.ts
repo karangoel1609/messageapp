@@ -8,6 +8,8 @@ import { MessageServiceService } from 'src/app/services/message-service.service'
 })
 export class DeleteMessageComponent implements OnInit {
 
+  password="";
+
   constructor(private messageService:MessageServiceService) { }
 
   ngOnInit(): void {
@@ -18,6 +20,9 @@ export class DeleteMessageComponent implements OnInit {
 
 
   deleteMessage(){
+
+
+    if(this.password=="nothing")
 this.messageService.deleteMessage().subscribe(res=>{console.log(res)},err=>{console.log(err)})
   }
 
