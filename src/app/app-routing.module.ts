@@ -5,9 +5,9 @@ import { DisplayMessageComponent } from './component/display-message/display-mes
 import { SendMessageComponent } from './component/send-message/send-message.component';
 
 const routes: Routes = [
+{path:'',redirectTo:'/displaymessage', pathMatch:'full'},
 
-
-{path:'', pathMatch:'full' ,component:DisplayMessageComponent},
+{path:'displaymessage',component:DisplayMessageComponent},
 {path:'sendmessage',component:SendMessageComponent},
 {path:'del',component:DeleteMessageComponent}
 ];
